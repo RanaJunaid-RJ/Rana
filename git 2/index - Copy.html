@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #Box
+        {
+            margin: auto;
+            /* border: 2px solid green; */
+            width: 600px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 3;
+            grid-template-rows: 3;
+            grid-template: 
+            "area1 area2 area3"
+            "area1 area4 area3"
+            "area5 area5 area5"
+
+
+        }
+        .item:nth-child(1)
+        {
+            grid-area: area1;
+            border: 2px solid green;
+            margin: 2px;
+        }
+        .item:nth-child(2)
+        {
+            grid-area: area2;
+            border: 2px solid blue;
+            margin: 2px;
+
+
+        }
+        .item:nth-child(3)
+        {
+            grid-area: area3;
+            border: 2px solid green;
+            margin: 2px;
+
+        }
+        .item:nth-child(4)
+        {
+            grid-area: area4;
+            border: 2px solid blue;
+            margin: 2px;
+
+        }
+        .item:nth-child(5)
+        {
+            grid-area: area5;
+            border: 2px solid brown;
+            margin: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="Box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
