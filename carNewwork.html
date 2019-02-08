@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #movingcar {
+            position: absolute;
+            z-index: 1;
+            animation: h1 6s linear 0s infinite forwards normal;
+
+
+        }
+        @keyframes h1 {
+            from {
+                left: -100%;
+            }
+
+            to {
+                left: 110%;
+            }
+        }
+
+        @keyframes h2 {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+        #wheel1 {
+            position: absolute;
+            top: 270px;
+            left: 195px;
+            animation: h2 0.9s linear 0s infinite forwards normal;
+
+
+        }
+
+        #wheel2 {
+            position: absolute;
+            top: 272px;
+            left: 844px;
+            animation: h2 0.9s linear 0s infinite forwards normal;
+
+        }
+
+        #Road {
+            height: 300px;
+            width: 1400px;
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+        <div id="movingcar">
+            <img id="car" src="../Car animation/my-car.png" alt="">
+            <img id="wheel1" src="../Car animation/wheel.png" alt="">
+            <img id="wheel2" src="../Car animation/wheel.png" alt="">
+        </div>
+    <div>
+        <img id="Road" src="../Car animation/myroad.jpg" alt="">
+    </div>
+</body>
+
+</html>
